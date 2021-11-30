@@ -1,0 +1,64 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "81b713e1-6836-4be9-a78b-fd4c3018a5b8",
+   "metadata": {},
+   "source": [
+    "## Data Cleaning "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "20988209-5c31-47bb-af77-221e7d83cff8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "26447877-ddd2-4493-9133-f351619efdb7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "reddit_data = pd.read_csv(\"cornell_submissions.csv\")\n",
+    "reddit_data = reddit_data[['author', 'title', 'selftext', 'num_comments', 'num_crossposts', 'score', 'upvote_ratio', \n",
+    "                          'url']]\n",
+    "# selftext is the body of the submission"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e9adc276-5d75-4c41-9b59-bada114dfb98",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
